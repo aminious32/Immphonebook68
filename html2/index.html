@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thailand Immigration Bureau - Phonebook</title>
+  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="assets/logo.png" alt="Thailand Immigration Bureau Logo" class="logo">
+      <h1>Thailand Immigration Bureau 2025</h1>
+      <p>Online Phonebook Directory</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- First Search Box (Display 1 Result) -->
+    <section class="search-section">
+      <div class="container">
+        <form id="search-form">
+          <input type="text" id="search-input" placeholder="ค้นหาชื่อ ชื่อสกุล หมายเลขโทรศัพท์..." required>
+          <button type="submit">ค้นหา</button>
+          <button type="reset">reset</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Second Search Box (Filter by Department) -->
+    <section class="filter-section">
+      <div class="container">
+        <form id="filter-form">
+          <input type="text" id="filter-input" placeholder="ค้นหาหน่วยงานในสังกัด เช่น ฝอ.5 บก.อก.สตม." required>
+          <button type="submit">ค้นหา</button>
+          <button type="reset">reset</button>
+        </form>
+        <div class="results-per-page">
+          <label for="results-per-page">Results per page:</label>
+          <select id="results-per-page">
+            <option value="10">10</option>
+            <option value="100">100</option>
+            <option value="200">200</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="phonebook-results">
+      <div class="container">
+        <div class="results-grid" id="results-grid">
+          <!-- Results will be dynamically inserted here -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>จัดทำโดย ฝ่ายอำนวยการ 5 กองบังคับการอำนวยการ สำนักงานตรวจคนเข้าเมือง</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
